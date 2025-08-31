@@ -14,15 +14,15 @@ body {
 
 /* Modern Feminine Color Variables */
 :root {
-    --blush-pink: #F8C8DC;
-    --peach: #FFD1B3;
-    --lavender: #DCC6E0;
+    --blush-pink: #F28D8C; /* New soft red color */
+    --peach: #E74C3C; /* New deeper red color */
+    --lavender:  #F2A8A1;
     --cream: #FFF8F0;
     --gold: #D4AF37;
     --charcoal: #333333;
-    --primary-color: var(--blush-pink);
-    --primary-light: #FBD5E4;
-    --primary-dark: #F5BBD0;
+    --primary-color: var(--blush-pink); /* Updated primary color */
+    --primary-light: #F9C6C1;
+    --primary-dark: #C84E4A;
     --accent-color: var(--gold);
     --accent-light: #E6C55A;
     --neutral-50: var(--cream);
@@ -38,14 +38,15 @@ body {
     --text-primary: var(--charcoal);
     --text-secondary: #666666;
     --text-light: #ffffff;
-    --gradient-primary: linear-gradient(135deg, var(--blush-pink), var(--peach));
-    --gradient-accent: linear-gradient(135deg, var(--lavender), var(--blush-pink));
+    --gradient-primary: linear-gradient(135deg, var(--blush-pink), var(--peach)); /* Updated gradient */
+    --gradient-accent: linear-gradient(135deg, var(--lavender), var(--blush-pink)); /* Updated gradient */
     --gradient-gold: linear-gradient(135deg, var(--gold), var(--accent-light));
     --shadow-sm: 0 1px 2px 0 rgba(248, 200, 220, 0.15);
     --shadow-md: 0 4px 6px -1px rgba(248, 200, 220, 0.2), 0 2px 4px -2px rgba(248, 200, 220, 0.15);
     --shadow-lg: 0 10px 15px -3px rgba(248, 200, 220, 0.25), 0 4px 6px -4px rgba(248, 200, 220, 0.2);
     --shadow-xl: 0 20px 25px -5px rgba(248, 200, 220, 0.3), 0 8px 10px -6px rgba(248, 200, 220, 0.25);
 }
+
 
 /* Container */
 .container {
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(250, 218, 221, 0.98);
+    background: rgba(242, 168, 161, 0.98);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--neutral-200);
     z-index: 1000;
@@ -93,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     list-style: none;
     gap: 2rem;
-    background: rgba(250, 218, 221, 0.98);
+    background: rgba(242, 168, 161, 0.98);
 }
 
 .nav-link {
@@ -689,6 +690,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 40px;
 }
 
+.section-title-about {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
 .text-content-simple {
     flex: 1;
     overflow: hidden;
@@ -934,7 +948,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Stats Section */
 .stats {
     padding: 60px 0;
-    background: var(--neutral-50);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--neutral-100) 50%, var(--lavender) 100%);
 }
 
 .stats-grid {
@@ -1365,7 +1379,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Brands Section - Infinite Scrolling */
 .brands {
     padding: 60px 0;
-    background: var(--neutral-50);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--neutral-100) 50%, var(--lavender) 100%);
     overflow: hidden;
 }
 
@@ -1561,7 +1575,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-item {
-    background: var(--neutral-50);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--neutral-100) 50%, var(--lavender) 100%);
     padding: 3rem;
     border-radius: 20px;
     text-align: center;
@@ -1762,7 +1776,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 60px 0;
-    background: var(--neutral-50);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--neutral-100) 50%, var(--lavender) 100%);
 }
 
 .contact-content {
