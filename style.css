@@ -702,6 +702,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
 }
 
+.section-title-1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .text-content-simple {
     flex: 1;
     overflow: hidden;
@@ -1616,7 +1629,7 @@ h1, h2, h3, h4, h5, h6 {
 .profile-name {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: white;
     margin: 0;
 }
 
@@ -1627,7 +1640,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stars {
-    color: var(--accent-color);
+    color: yellow;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     display: flex;
@@ -1638,7 +1651,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-text {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--text-secondary);
+    color: white;
     font-style: italic;
     margin: 0;
 }
@@ -1794,7 +1807,32 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.contact-description {
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.contact-description p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.interview-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.interview-link:hover {
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary-color);
 }
 
 .follow-title {
